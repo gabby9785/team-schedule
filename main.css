@@ -1,0 +1,78 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 42px;
+  color: #ffffff
+}
+
+table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption{
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+thead{
+  text-align: center;
+  background-color: #ff0000;
+}
+
+tbody{
+
+}
+
+tr{
+  border: 1px solid #000000;
+  display: run-in;
+  margin: 7px;
+
+}
+
+th{
+  text-align: center;
+  background-color: #ff0000;
+  padding: 7px;
+}
+
+td{
+  padding: 7px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+
+  table{
+    width: 100%;
+  }
+
+  thead{
+    display: none;
+  }
+
+  tr{
+    border: 1px solid #ff0000;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  td{
+    display: block;
+    text-align: right;
+  }
+
+  td:before{
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
